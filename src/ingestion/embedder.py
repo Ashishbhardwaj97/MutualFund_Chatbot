@@ -1,4 +1,6 @@
 import os
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
 import json
 import logging
 from typing import List, Dict, Any, Optional
