@@ -1,0 +1,57 @@
+name: Daily Mutual Fund Data Ingestion
+
+on:
+  schedule:
+    # Runs daily at 09:00 AM UTC (02:30 PM IST)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub repository actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    name: Run Ingestion and Scrape Data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: |
+          playwright install chromium --with-deps
+
+      - name: Run Ingestion Scheduler
+        env:
+          # Ingestion is run-now, single execution mode
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python src/ingestion/scheduler.py --run-now
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage parsed JSON files
+          git add data/parsed/
+          
+          # Only commit and push if there are changes to the parsed files
+          if git diff --staged --quiet; then
+            echo "No updates detected in mutual fund data."
+          else
+            git commit -m "chore: auto-update scraped mutual fund data [skip ci]"
+            git push
+          fi

@@ -1,1 +1,1 @@
-web: uvicorn src.server:app --host 0.0.0.0 --port ${PORT:-8000}
+web: python -m src.ingestion.embedder && uvicorn src.server:app --host 0.0.0.0 --port ${PORT:-8000}
