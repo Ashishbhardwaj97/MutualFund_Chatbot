@@ -1,0 +1,81 @@
+{
+    "fund_name": "ICICI Prudential Smallcap Fund Direct Plan Growth",
+    "source_url": "https://groww.in/mutual-funds/icici-prudential-indo-asia-equity-fund-direct-growth",
+    "nav": 97.26,
+    "fund_size": 8741.29856423,
+    "expense_ratio": 1.71,
+    "exit_load": "Exit load of 1% if redeemed upto 1 year",
+    "min_sip": 100.0,
+    "lock_in": "No Lock-in",
+    "riskometer": "Moderately High Riskometer",
+    "benchmark": "NIFTY Smallcap 250 Total Return Index",
+    "managers": [
+        {
+            "name": "Rajat Chandak",
+            "experience": "He has been associated with ICICI Prudential AMC since 2008.",
+            "tenure": "Since February 2026"
+        },
+        {
+            "name": "Aatur Shah",
+            "experience": "He has over 10 years of experience in ICICI Prudentail AMC as Product Development & Strategy team and Research Analyst.",
+            "tenure": "Since April 2025"
+        },
+        {
+            "name": "Gaurav Jain",
+            "experience": "Prior to joining the ICICI Prudential AMC, he was associated with Nippon AMC and Wipro Ltd.",
+            "tenure": "Since February 2026"
+        },
+        {
+            "name": "Sakshat Goel",
+            "experience": "Prior to joining the ICICI Prudential AMC, he was associated with Futures First.",
+            "tenure": "Since February 2026"
+        },
+        {
+            "name": "S Naren",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Atul Patel",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Priyanka Khandelwal",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Anoop Bhaskar",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Taher Badshah",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "S Krishnakumar",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Samir Rachh",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Dhrumil Shah",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Ashish Naik",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        }
+    ],
+    "objective": "The scheme seeks to generate capital appreciation by predominantly investing in equity and equity related securities of small cap stocks.",
+    "last_scraped_date": "2026-06-01"
+}

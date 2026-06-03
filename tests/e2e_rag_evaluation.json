@@ -1,0 +1,549 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-02 21:51:51",
+    "total_queries_evaluated": 50,
+    "factual_queries": 30,
+    "advisory_queries": 20,
+    "averages": {
+      "latency_ms": 557.72
+    }
+  },
+  "metrics": {
+    "refusal_accuracy_pct": 100.0,
+    "citation_accuracy_pct": 100.0,
+    "formatting_accuracy_pct": 100.0,
+    "total_rag_success_pct": 100.0
+  },
+  "detailed_results": [
+    {
+      "query": "What is the exit load of the Liquid Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 663.6612999718636,
+      "errors": [],
+      "response": "The exit load of the ICICI Prudential Liquid Fund Direct Plan Growth is as follows: 0.0070% if redeemed within 1 day, 0.0065% if redeemed within 2 days, 0.0060% if redeemed within 3 days, 0.0055% if redeemed within 4 days, 0.0050% if redeemed within 5 days, 0.0045% if redeemed within 6 days. (source_url: https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth)\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who is the manager of Large Cap Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 709.0878000017256,
+      "errors": [],
+      "response": "The managers of ICICI Prudential Large Cap Fund Direct Growth are Sharmila D'Silva, Sankaran Naren, Vaibhav Dusad, and others. However, the specific experience and tenure of managers other than Sharmila D'Silva and Sankaran Naren are not specified. \nSource: https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Tell me the minimum SIP amount of ICICI Commodities Fund Direct Growth.",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 936.9764999719337,
+      "errors": [],
+      "response": "The minimum SIP investment for ICICI Prudential Commodities Fund Direct Growth is Rs. 100.0. \n\nSource: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the lock-in period for the retirement fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 1581.741000059992,
+      "errors": [],
+      "response": "The lock-in period for the ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth is 5 years. \nSource URL: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the benchmark of ICICI Value Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 477.56800008937716,
+      "errors": [],
+      "response": "The benchmark index of ICICI Prudential Value Direct Growth is NIFTY 500 Total Return Index. \n\nSource: https://groww.in/mutual-funds/icici-prudential-value-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the AUM or size of ICICI Flexicap Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 927.4464000482112,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who manages ICICI Prudential Equity & Debt Fund Direct Growth?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 1197.7165000280365,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-balanced-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the investment objective of the ICICI Retirement Fund Direct Growth?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 1243.695899960585,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Tell me the riskometer category of ICICI Silver ETF FoF.",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 1233.5409000515938,
+      "errors": [],
+      "response": "The riskometer category of ICICI Prudential Silver ETF FoF Direct Growth is Moderately High. \n\nSource: https://groww.in/mutual-funds/icici-prudential-silver-etf-fof-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the exit load of the Commodities Fund Direct Growth?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 906.0291999485344,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "ICICI Liquid Fund Direct Growth exit load details please.",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 906.4027999993414,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who is the manager of the large cap fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 926.888499991037,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the benchmark of ICICI Commodities Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 898.5553999664262,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the minimum investment amount for ICICI Liquid Fund Direct?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 908.9853001059964,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-liquid-fund-direct-plan-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Is there any exit load for the retirement fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 936.0368000343442,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the lock in of the retirement fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 956.0039000352845,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the risk level of Value Discovery Fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 882.9039999982342,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-value-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who manages the commodities fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 861.9016000302508,
+      "errors": [],
+      "response": "The ICICI Prudential Commodities Fund Direct Growth is managed by Lalit Kumar, Sharmila D'Silva, and Sankaran Naren. \nLalit Kumar has been with the fund since July 2020, Sharmila D'Silva since June 2022, and Sankaran Naren's tenure and experience are not specified. \nSource: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the benchmark index for the flexicap direct plan?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 889.5013000583276,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who runs the commodities direct fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 906.4613999798894,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the risk of the Silver ETF?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 1149.6338000288233,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-silver-etf-fof-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Tell me about the exit load of value fund.",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 877.942799939774,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-value-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who runs the retirement pure equity scheme?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 924.685399979353,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the minimum SIP size of ICICI Flexicap?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 890.9032000228763,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What index does Silver ETF direct follow?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 931.3338999636471,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-silver-etf-fof-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Who manages multi cap fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 942.8958999924362,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-multicap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Tell me about the lock in for retirement fund.",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 898.2036999659613,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the size AUM of commodities fund?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 504.835500032641,
+      "errors": [],
+      "response": "The Fund Size (AUM) of ICICI Prudential Commodities Fund Direct Growth is Rs. 3789.06177062 Cr. \n\nSource: https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Is there any exit load for direct plan flexicap?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 916.36379994452,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "What is the investment goal of ICICI Large Cap?",
+      "expected_intent": "FACTUAL",
+      "actual_intent": "FACTUAL",
+      "passed": true,
+      "latency_ms": 897.0515000401065,
+      "errors": [],
+      "response": "I am unable to format a compliant response at this time. Please refer directly to the official source: https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth\nLast updated from sources: 2026-06-01"
+    },
+    {
+      "query": "Should I invest in ICICI Large Cap fund?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.05859998054802418,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Which is the best fund to buy today?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.04329998046159744,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Can you recommend a good mutual fund for high growth?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.046600005589425564,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Is it a good time to sell my multi-asset holdings?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.0393999507650733,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Compare the performance of bluechip vs liquid and tell me which has better return.",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.06669992581009865,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "What is the return prediction of commodities fund for next year?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.05039991810917854,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Do you advise buying the flexicap direct plan for long term growth?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.04449998959898949,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Which is safer between liquid fund and value discovery?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.059999991208314896,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Is retirement pure equity direct plan a good choice for my retirement?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.06569991819560528,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Give me your opinion on silver etf performance.",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.03999995533376932,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "I want to invest Rs 5000, should I buy multicap or value discovery?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.037400051951408386,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Which fund has the highest profit and gain?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.04740001168102026,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Will the commodities direct fund double my money in 5 years?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.0665000407025218,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Is the large cap direct growth fund a safe and profitable investment?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.06189988926053047,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Which fund should I buy for tax saving?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.03300001844763756,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Should I choose direct plan flexicap over regular plan for better return?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.035100034438073635,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "What are the future growth projections for multicap fund?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.04409998655319214,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Is it wise to invest in commodities fund now?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.054900068789720535,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Can you give me investment advice on retirement scheme?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.041899969801306725,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    },
+    {
+      "query": "Which fund has top performing returns this year?",
+      "expected_intent": "ADVISORY",
+      "actual_intent": "ADVISORY",
+      "passed": true,
+      "latency_ms": 0.048200017772614956,
+      "errors": [],
+      "response": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+      "links": [
+        "https://www.amfiindia.com/",
+        "https://investor.sebi.gov.in/"
+      ]
+    }
+  ]
+}

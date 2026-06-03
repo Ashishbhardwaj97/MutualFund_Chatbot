@@ -1,0 +1,13 @@
+{
+  "refusal_disclaimer": "As an AI FAQ assistant, I am designed to provide only direct, objective, and verifiable facts about mutual funds. I cannot provide investment advice, recommendations, performance opinions, comparisons, or buy/sell suggestions.",
+  "educational_resources": [
+    {
+      "name": "AMFI India (Association of Mutual Funds in India)",
+      "url": "https://www.amfiindia.com/"
+    },
+    {
+      "name": "SEBI Investor Education (Securities and Exchange Board of India)",
+      "url": "https://investor.sebi.gov.in/"
+    }
+  ]
+}

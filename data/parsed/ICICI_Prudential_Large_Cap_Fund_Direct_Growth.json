@@ -1,0 +1,71 @@
+{
+    "fund_name": "ICICI Prudential Large Cap Fund Direct Growth",
+    "source_url": "https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth",
+    "nav": 116.43,
+    "fund_size": 75650.43054522,
+    "expense_ratio": 2.95,
+    "exit_load": "Exit load of 1%, if redeemed within 1 month.",
+    "min_sip": 100.0,
+    "lock_in": "No Lock-in",
+    "riskometer": "Moderately High Riskometer",
+    "benchmark": "NIFTY 100 Total Return Index",
+    "managers": [
+        {
+            "name": "Sharmila D'Silva",
+            "experience": "She joined ICICI Prudential AMC Limited in September 2016.",
+            "tenure": "Since March 2026"
+        },
+        {
+            "name": "Sankaran Naren",
+            "experience": "Prior to joining ICICI Prudential AMC he has worked with Refco Sify Securities India Pvt. Ltd., HDFC Securities Ltd. and Yoha Securities.",
+            "tenure": "Since February 2026"
+        },
+        {
+            "name": "Vaibhav Dusad",
+            "experience": "Prior to joining ICICI Prudential AMC Ltd, he has worked with Morgan Stanley, HSBC Global Banking and Markets, CRISIL, Zinnov Mangement Consulting and Citibank Singapore.",
+            "tenure": "Since January 2021"
+        },
+        {
+            "name": "S Naren",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Rajat Chandak",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Vinay Paharia",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Taher Badshah",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Ramesh Mantri",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Ashwani Kumar",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Sailesh Raj Bhan",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Harish Zaveri",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        }
+    ],
+    "objective": "The scheme seeks to generate long term capital appreciation and income distribution to investors from a portfolio that is predominantly invested in equity and equity related securities of large cap companies.",
+    "last_scraped_date": "2026-06-01"
+}

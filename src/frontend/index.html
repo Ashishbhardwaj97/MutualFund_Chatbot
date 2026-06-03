@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>GrowwFAQ | Mutual Fund Assistant</title>
+    
+    <!-- Tailwind CSS with Play Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Premium Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- React 18 & Babel Standalone for direct out-of-the-box browser execution -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#c8d4ec",
+                        "on-primary": "#003828",
+                        "outline": "#85948c",
+                        "secondary-fixed": "#dfe2f1",
+                        "primary-fixed": "#59fdc5",
+                        "primary-fixed-dim": "#2fe0aa",
+                        "surface-container-low": "#0d1c2d",
+                        "inverse-on-surface": "#233143",
+                        "outline-variant": "#3c4a43",
+                        "on-primary-fixed": "#002116",
+                        "tertiary-fixed": "#d8e3fb",
+                        "tertiary-container": "#adb8cf",
+                        "surface-container-lowest": "#010f1f",
+                        "on-secondary-container": "#b5b8c6",
+                        "secondary-fixed-dim": "#c3c6d4",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#273647",
+                        "surface-variant": "#273647",
+                        "tertiary-fixed-dim": "#bcc7de",
+                        "on-secondary-fixed": "#171b26",
+                        "on-error": "#690005",
+                        "surface-tint": "#2fe0aa",
+                        "surface-dim": "#051424",
+                        "surface": "#051424",
+                        "surface-container-high": "#1c2b3c",
+                        "surface-bright": "#2c3a4c",
+                        "primary-container": "#00d09c",
+                        "error": "#ffb4ab",
+                        "primary": "#44edb7",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "background": "#051424",
+                        "surface-container": "#122131",
+                        "on-tertiary-container": "#3e495c",
+                        "on-surface": "#d4e4fa",
+                        "secondary-container": "#454955",
+                        "on-primary-container": "#00533c",
+                        "on-primary-fixed-variant": "#00513b",
+                        "on-secondary": "#2c303b",
+                        "on-surface-variant": "#bacac1",
+                        "inverse-surface": "#d4e4fa",
+                        "on-background": "#d4e4fa",
+                        "on-tertiary": "#263143",
+                        "on-tertiary-fixed": "#111c2d",
+                        "on-secondary-fixed-variant": "#434652",
+                        "inverse-primary": "#006c4f",
+                        "secondary": "#c3c6d4",
+                        "error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "lg": "40px",
+                        "xl": "64px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "md": "24px",
+                        "base": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "headline-lg": ["Outfit"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Outfit"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #00d09c;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="dark selection:bg-primary-container selection:text-on-primary-container">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+
+        const INITIAL_MESSAGES = [];
+
+        // Maps matching icon indicators in sidebar
+        const FUND_ICONS = {
+            "large cap": "show_chart",
+            "commodities": "factory",
+            "equity & debt": "balance",
+            "balanced": "equalizer",
+            "liquid": "water_drop",
+            "flexicap": "trending_up",
+            "value": "savings",
+            "retirement": "payments",
+            "multicap": "account_balance_wallet",
+            "smallcap": "trending_up",
+            "silver": "monetization_on"
+        };
+
+        function getIconForFund(name) {
+            const lower = name.toLowerCase();
+            for (const key in FUND_ICONS) {
+                if (lower.includes(key)) {
+                    return FUND_ICONS[key];
+                }
+            }
+            return "bar_chart";
+        }
+
+        function App() {
+            const [selectedScheme, setSelectedScheme] = useState(null);
+            const [schemes, setSchemes] = useState([]);
+            const [searchFilter, setSearchFilter] = useState("");
+            const [messages, setMessages] = useState(INITIAL_MESSAGES);
+            const [inputQuery, setInputQuery] = useState("");
+            const [loading, setLoading] = useState(false);
+            const chatEndRef = useRef(null);
+
+            // Fetch Schemes on load
+            useEffect(() => {
+                fetch("/api/schemes")
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data && data.schemes) {
+                            setSchemes(data.schemes);
+                            if (data.schemes.length > 0) {
+                                setSelectedScheme(data.schemes[0].fund_name);
+                            }
+                        }
+                    })
+                    .catch(err => {
+                        console.error("Failed to fetch schemes, using fallback catalog.", err);
+                        // Fallback fallback list containing exactly the 10 parsed mutual funds
+                        const fallbackSchemes = [
+                            { fund_name: "ICICI Prudential Large Cap Fund Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Commodities Fund Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Equity & Debt Fund Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Liquid Fund Direct Plan Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Flexicap Fund Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Value Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Multicap Fund Direct Plan Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Smallcap Fund Direct Plan Growth", last_scraped_date: "2026-06-01" },
+                            { fund_name: "ICICI Prudential Silver ETF FoF Direct Growth", last_scraped_date: "2026-06-01" }
+                        ];
+                        setSchemes(fallbackSchemes);
+                        setSelectedScheme(fallbackSchemes[0].fund_name);
+                    });
+            }, []);
+
+            // Scroll to bottom on new messages
+            useEffect(() => {
+                chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+            }, [messages]);
+
+            const handleSend = (queryText) => {
+                const text = queryText || inputQuery;
+                if (!text.trim() || loading) return;
+
+                const userMsg = {
+                    id: Date.now().toString(),
+                    sender: "user",
+                    text: text
+                };
+
+                setMessages(prev => [...prev, userMsg]);
+                setInputQuery("");
+                setLoading(true);
+
+                fetch("/api/query", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ query: text })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    setLoading(false);
+                    const replyId = (Date.now() + 1).toString();
+
+                    if (data.status === "success") {
+                        setMessages(prev => [...prev, {
+                            id: replyId,
+                            sender: "assistant",
+                            text: data.answer,
+                            citations: data.citations
+                        }]);
+                    } else if (data.status === "refused") {
+                        setMessages(prev => [...prev, {
+                            id: replyId,
+                            sender: "compliance",
+                            text: data.disclaimer,
+                            disclaimer: data.disclaimer,
+                            resources: data.educational_resources
+                        }]);
+                    } else if (data.status === "ambiguous") {
+                        setMessages(prev => [...prev, {
+                            id: replyId,
+                            sender: "system",
+                            text: data.answer,
+                            options: schemes.map(s => s.fund_name)
+                        }]);
+                    } else {
+                        setMessages(prev => [...prev, {
+                            id: replyId,
+                            sender: "system",
+                            text: data.answer || "I encountered an error. Please try again."
+                        }]);
+                    }
+                })
+                .catch(err => {
+                    setLoading(false);
+                    console.error("Query API error:", err);
+                    setMessages(prev => [...prev, {
+                        id: Date.now().toString(),
+                        sender: "system",
+                        text: "Failed to connect to the backend server. Make sure the API service is running."
+                    }]);
+                });
+            };
+
+            const selectQuickStart = (text) => {
+                setInputQuery(text);
+                handleSend(text);
+            };
+
+            // Filter schemes list
+            const filteredSchemes = schemes.filter(s =>
+                s.fund_name.toLowerCase().includes(searchFilter.toLowerCase())
+            );
+
+            // Floating elements translation on mouse hover
+            const handleMouseMove = (e) => {
+                const blobs = document.querySelectorAll('.bg-blob');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                blobs.forEach((blob, index) => {
+                    const speed = (index + 1) * 15;
+                    blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+                });
+            };
+
+            useEffect(() => {
+                document.addEventListener('mousemove', handleMouseMove);
+                return () => document.removeEventListener('mousemove', handleMouseMove);
+            }, []);
+
+            return (
+                <div className="flex h-screen w-screen overflow-hidden bg-background text-on-surface">
+                    
+                    {/* Left Sidebar */}
+                    <aside className="h-screen w-80 fixed left-0 top-0 bg-surface-container border-r border-outline-variant shadow-sm flex flex-col py-md px-sm overflow-hidden z-50">
+                        {/* Brand Logo Header */}
+                        <div className="flex items-center gap-sm mb-md px-xs">
+                            <span className="material-symbols-outlined text-[36px] text-primary" style={{fontVariationSettings: "'FILL' 1"}}>equalizer</span>
+                            <div>
+                                <h1 className="font-headline-md text-[20px] font-bold text-primary tracking-tight leading-none">GrowwFAQ</h1>
+                                <p className="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Facts-Only Assistant</p>
+                            </div>
+                        </div>
+
+                        {/* Compliance Status Widget */}
+                        <div className="mb-md p-sm bg-[#2a2412] border border-yellow-500/20 rounded-xl relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 p-xs">
+                                <span className="material-symbols-outlined text-yellow-500 text-[18px]">verified_user</span>
+                            </div>
+                            <p className="font-label-md text-yellow-500 mb-xs flex items-center gap-xs text-[12px]">
+                                Compliance Active
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+                                </span>
+                            </p>
+                            <p className="font-label-sm text-yellow-500/70 leading-relaxed uppercase tracking-wider text-[9px] font-bold">Factual Guardrails Armed</p>
+                        </div>
+
+                        {/* Search Scheme Input */}
+                        <div className="mb-sm px-xs">
+                            <div className="flex items-center gap-xs px-sm py-2 bg-surface-container-lowest rounded-lg border border-outline-variant/60 focus-within:border-primary/50 transition-all">
+                                <span className="material-symbols-outlined text-on-surface-variant text-[18px]">search</span>
+                                <input 
+                                    type="text" 
+                                    placeholder="Filter schemes..."
+                                    value={searchFilter}
+                                    onChange={(e) => setSearchFilter(e.target.value)}
+                                    className="bg-transparent border-none focus:ring-0 text-[12px] text-on-surface placeholder:text-on-surface-variant/40 w-full p-0"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Scheme Directory List */}
+                        <div className="flex-1 overflow-y-auto custom-scrollbar px-xs space-y-2">
+                            <h3 className="font-label-sm text-on-surface-variant uppercase tracking-wider text-[10px] font-bold px-sm mb-1">Eligible Schemes Directory</h3>
+                            {filteredSchemes.map((scheme, idx) => {
+                                const isSelected = selectedScheme === scheme.fund_name;
+                                let cleanName = scheme.fund_name.replace("ICICI Prudential ", "").replace(" Direct Growth", "").replace(" Direct Plan Growth", "");
+                                if (cleanName === "Value") cleanName = "Value Fund";
+                                return (
+                                    <button 
+                                        key={idx}
+                                        onClick={() => {
+                                            setSelectedScheme(scheme.fund_name);
+                                            setInputQuery(`Show me the exit load and managers of ${cleanName}`);
+                                        }}
+                                        className={`w-full flex items-center gap-sm rounded-lg px-md py-2.5 transition-all active:scale-[0.98] text-left ${
+                                            isSelected 
+                                                ? 'bg-secondary-container text-primary border-l-2 border-primary shadow-sm' 
+                                                : 'text-on-surface-variant hover:bg-surface-variant'
+                                        }`}
+                                    >
+                                        <span className="material-symbols-outlined text-[18px] opacity-80">
+                                            {getIconForFund(scheme.fund_name)}
+                                        </span>
+                                        <div className="flex flex-col overflow-hidden">
+                                            <span className="font-label-md text-[13px] truncate font-medium">{cleanName}</span>
+                                            <span className="text-[9px] opacity-60 mt-0.5">Scraped: {scheme.last_scraped_date}</span>
+                                        </div>
+                                    </button>
+                                );
+                            })}
+                            {filteredSchemes.length === 0 && (
+                                <p className="text-[11px] text-on-surface-variant/50 text-center py-4">No matching schemes found</p>
+                            )}
+                        </div>
+
+                        {/* Indexing Widget Footer */}
+                        <div className="mt-auto pt-md border-t border-outline-variant/30">
+                            <div className="p-sm rounded-xl bg-surface-container-high flex flex-col gap-xs">
+                                <div className="flex justify-between items-center">
+                                    <span className="font-label-sm text-primary flex items-center gap-xs text-[11px]">
+                                        <span className="material-symbols-outlined text-[14px]">sensors</span>
+                                        Indexed Chunks
+                                    </span>
+                                    <span className="font-label-md text-on-surface text-[12px] font-bold">1,480 Chunks</span>
+                                </div>
+                                <div className="w-full h-1 bg-outline-variant rounded-full overflow-hidden">
+                                    <div className="w-[85%] h-full bg-primary-container animate-pulse"></div>
+                                </div>
+                                <p className="text-[9px] text-on-surface-variant/70 text-center">Factual database synced</p>
+                            </div>
+                        </div>
+                    </aside>
+
+                    {/* Main Workspace Frame */}
+                    <main className="ml-80 min-h-screen flex-1 flex flex-col bg-background relative overflow-hidden">
+                        
+                        {/* Dynamic Background Glass Blobs */}
+                        <div className="bg-blob absolute top-0 right-0 w-[550px] h-[550px] bg-primary/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3 transition-transform duration-300 ease-out"></div>
+                        <div className="bg-blob absolute bottom-0 left-0 w-[350px] h-[350px] bg-secondary/5 rounded-full blur-[80px] -z-10 -translate-x-1/4 translate-y-1/4 transition-transform duration-300 ease-out"></div>
+
+                        {/* Top Navigation Bar */}
+                        <header className="flex justify-between items-center w-full px-margin-desktop h-16 bg-surface/70 backdrop-blur-xl border-b border-white/10 sticky top-0 z-40">
+                            <div className="flex items-center gap-md">
+                                <h2 className="font-headline-md text-headline-md font-bold text-primary text-[18px]">ICICI Prudential FAQ Desk</h2>
+                                <div className="flex items-center gap-sm px-sm py-1 bg-surface-container-highest rounded-full border border-outline-variant">
+                                    <div className="relative flex h-2 w-2">
+                                        <div className="pulse-ring"></div>
+                                        <div className="relative rounded-full h-2 w-2 bg-primary"></div>
+                                    </div>
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">RAG Pipeline: Online</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-sm">
+                                <button className="p-xs text-on-surface-variant hover:text-primary transition-colors">
+                                    <span className="material-symbols-outlined text-[20px]">info</span>
+                                </button>
+                                <div className="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center overflow-hidden">
+                                    <span className="material-symbols-outlined text-on-surface-variant text-[20px]">person</span>
+                                </div>
+                            </div>
+                        </header>
+
+                        {/* Chat Feed Scroll Area */}
+                        <div className="flex-1 px-margin-desktop py-lg overflow-y-auto custom-scrollbar flex flex-col gap-lg max-w-4xl mx-auto w-full pb-48">
+                            
+                            {/* Empty State Welcome Card */}
+                            {messages.length === 0 && (
+                                <div className="w-full text-center py-xl">
+                                    <h2 className="font-display-lg text-[32px] md:text-[38px] leading-tight mb-md text-on-surface font-semibold">
+                                        How can I help you find <span className="text-primary">factual info</span> on ICICI Prudential Schemes today?
+                                    </h2>
+                                    <p className="text-on-surface-variant/60 font-body-md max-w-xl mx-auto mb-lg text-[14px]">
+                                        Ask direct questions about fund size (AUM), exit loads, expense ratios, riskometers, investment thresholds, or fund management.
+                                    </p>
+                                    <div className="flex flex-wrap justify-center gap-sm mt-lg">
+                                        <button 
+                                            onClick={() => selectQuickStart("What is the exit load of Liquid Fund?")}
+                                            className="px-md py-2.5 rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-[13px] font-medium"
+                                        >
+                                            Exit load of Liquid Fund
+                                        </button>
+                                        <button 
+                                            onClick={() => selectQuickStart("Who are the fund managers of ICICI Large Cap Fund?")}
+                                            className="px-md py-2.5 rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-[13px] font-medium"
+                                        >
+                                            Managers of Large Cap
+                                        </button>
+                                        <button 
+                                            onClick={() => selectQuickStart("What is the minimum investment for Multi-Asset Fund?")}
+                                            className="px-md py-2.5 rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-[13px] font-medium"
+                                        >
+                                            Multi-Asset SIP amount
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Conversation List */}
+                            {messages.map((msg) => {
+                                // 1. Render User Message
+                                if (msg.sender === "user") {
+                                    return (
+                                        <div key={msg.id} className="w-full flex flex-col items-end gap-1">
+                                            <div className="flex items-center gap-sm mb-1 flex-row-reverse">
+                                                <div className="w-7 h-7 rounded-full bg-surface-variant flex items-center justify-center border border-outline-variant">
+                                                    <span className="material-symbols-outlined text-on-surface-variant text-[16px]">person</span>
+                                                </div>
+                                                <span className="font-label-md text-[12px] text-on-surface-variant">You</span>
+                                            </div>
+                                            <div className="p-md bg-surface-container-high border border-outline-variant/60 rounded-2xl max-w-xl text-on-surface shadow-sm">
+                                                <p className="font-body-md text-[14px] leading-relaxed">{msg.text}</p>
+                                            </div>
+                                        </div>
+                                    );
+                                }
+
+                                // 2. Render Compliance Refusal Message
+                                if (msg.sender === "compliance") {
+                                    return (
+                                        <div key={msg.id} className="w-full flex flex-col items-start gap-1">
+                                            <div className="flex items-center gap-sm mb-1">
+                                                <div className="w-7 h-7 rounded-full bg-error/10 flex items-center justify-center border border-error/30">
+                                                    <span className="material-symbols-outlined text-error text-[16px]">gavel</span>
+                                                </div>
+                                                <span className="font-label-md text-[12px] text-error font-semibold">Compliance Guard</span>
+                                            </div>
+                                            <div className="p-md bg-error-container/10 border border-error/30 rounded-2xl max-w-xl text-on-surface relative overflow-hidden shadow-lg">
+                                                <div className="absolute -right-4 -top-4 opacity-5 pointer-events-none">
+                                                    <span className="material-symbols-outlined text-[100px] text-error">warning</span>
+                                                </div>
+                                                <p className="font-body-md text-on-surface mb-md text-[14px] leading-relaxed">
+                                                    {msg.text}
+                                                </p>
+                                                <div className="flex flex-wrap gap-md mt-sm border-t border-error/10 pt-sm">
+                                                    <a 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="text-[12px] font-semibold text-primary hover:underline flex items-center gap-xs" 
+                                                        href="https://www.amfiindia.com/"
+                                                    >
+                                                        AMFI India Official <span className="material-symbols-outlined text-[12px]">open_in_new</span>
+                                                    </a>
+                                                    <a 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="text-[12px] font-semibold text-primary hover:underline flex items-center gap-xs" 
+                                                        href="https://investor.sebi.gov.in/"
+                                                    >
+                                                        SEBI Investor Education <span className="material-symbols-outlined text-[12px]">open_in_new</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                }
+
+                                // 3. Render System Clarification Message
+                                if (msg.sender === "system") {
+                                    return (
+                                        <div key={msg.id} className="w-full flex flex-col items-start gap-1">
+                                            <div className="flex items-center gap-sm mb-1">
+                                                <div className="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant">
+                                                    <span className="material-symbols-outlined text-on-surface-variant text-[16px]">info</span>
+                                                </div>
+                                                <span className="font-label-md text-[12px] text-on-surface-variant">System Clarification</span>
+                                            </div>
+                                            <div className="p-md glass-card rounded-2xl max-w-xl text-on-surface-variant border border-outline-variant shadow-md">
+                                                <p className="font-body-md text-[14px] leading-relaxed mb-md">{msg.text}</p>
+                                                {msg.options && (
+                                                    <div className="flex flex-wrap gap-xs">
+                                                        {msg.options.slice(0, 3).map((opt, oIdx) => {
+                                                            let cleanName = opt.replace("ICICI Prudential ", "").replace(" Direct Growth", "").replace(" Direct Plan Growth", "");
+                                                            if (cleanName === "Value") cleanName = "Value Fund";
+                                                            return (
+                                                                <button 
+                                                                    key={oIdx}
+                                                                    onClick={() => handleSend(`Show details for ${opt}`)}
+                                                                    className="px-sm py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-primary text-[12px] font-medium transition-all"
+                                                                >
+                                                                    {cleanName}
+                                                                </button>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                    );
+                                }
+
+                                // 4. Render Standard Factual Response
+                                return (
+                                    <div key={msg.id} className="w-full flex flex-col items-start gap-1">
+                                        <div className="flex items-center gap-sm mb-1">
+                                            <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30">
+                                                <span className="material-symbols-outlined text-primary text-[16px]">robot_2</span>
+                                            </div>
+                                            <span className="font-label-md text-[12px] text-primary font-bold">GrowwFAQ AI</span>
+                                        </div>
+                                        <div className="p-md glass-card rounded-2xl max-w-xl text-on-surface leading-relaxed border-l-4 border-l-primary shadow-lg">
+                                            <p className="font-body-md text-[14px] leading-relaxed">{msg.text}</p>
+                                            
+                                            {/* Compliant Citation Card */}
+                                            {msg.citations && msg.citations.length > 0 && (
+                                                <div className="mt-md p-sm bg-surface-container-high rounded-xl border border-outline-variant flex items-center justify-between shadow-sm">
+                                                    <div className="flex items-center gap-sm overflow-hidden">
+                                                        <span className="material-symbols-outlined text-primary text-[18px] flex-shrink-0">verified</span>
+                                                        <div className="overflow-hidden">
+                                                            <p className="text-[11px] font-bold text-on-surface truncate">Source: Groww Verified SID</p>
+                                                            <p className="text-[9px] text-on-surface-variant truncate">Linked: {msg.citations[0].fund_name}</p>
+                                                        </div>
+                                                    </div>
+                                                    <a 
+                                                        href={msg.citations[0].source_url} 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        className="flex items-center gap-xs bg-primary/10 hover:bg-primary/20 px-2.5 py-1 rounded-full transition-all flex-shrink-0"
+                                                    >
+                                                        <span className="text-[9px] font-bold text-primary uppercase">100% Verified</span>
+                                                        <span className="material-symbols-outlined text-primary text-[10px]">open_in_new</span>
+                                                    </a>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+
+                            {/* Processing skeleton state */}
+                            {loading && (
+                                <div className="w-full flex flex-col items-start gap-1 animate-pulse">
+                                    <div className="flex items-center gap-sm mb-1">
+                                        <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                                            <span className="material-symbols-outlined text-primary/50 text-[16px]">robot_2</span>
+                                        </div>
+                                        <span className="font-label-md text-[12px] text-primary/60 font-bold">Query Processing...</span>
+                                    </div>
+                                    <div className="p-md glass-card rounded-2xl w-full max-w-xl text-on-surface border-l-4 border-l-primary/40 space-y-2">
+                                        <div className="h-4 bg-surface-variant rounded w-3/4"></div>
+                                        <div className="h-4 bg-surface-variant rounded w-5/6"></div>
+                                        <div className="h-4 bg-surface-variant rounded w-1/2"></div>
+                                    </div>
+                                </div>
+                            )}
+
+                            <div ref={chatEndRef} />
+                        </div>
+
+                        {/* Floating Controller & Search Bar */}
+                        <div className="fixed bottom-0 left-80 right-0 p-lg z-40 flex justify-center pointer-events-none">
+                            <div className="w-full max-w-3xl glass-card rounded-2xl p-sm border border-white/10 shadow-2xl pointer-events-auto">
+                                <div className="flex items-center gap-sm">
+                                    <div className="flex-1 flex items-center gap-sm px-md py-sm bg-surface-container-lowest rounded-xl border border-outline-variant/60 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary/20 transition-all">
+                                        <span className="material-symbols-outlined text-on-surface-variant">search</span>
+                                        <input 
+                                            type="text" 
+                                            value={inputQuery}
+                                            onChange={(e) => setInputQuery(e.target.value)}
+                                            onKeyDown={(e) => {
+                                                if (e.key === 'Enter') handleSend();
+                                            }}
+                                            className="bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/40 w-full font-body-md p-0" 
+                                            placeholder="Ask about expense ratios, fund managers, or lock-in limits..."
+                                        />
+                                    </div>
+                                    <button 
+                                        onClick={() => handleSend()}
+                                        disabled={loading || !inputQuery.trim()}
+                                        className="bg-primary-container text-on-primary-container p-sm rounded-xl hover:scale-105 active:scale-95 disabled:scale-100 disabled:opacity-40 transition-all flex items-center justify-center"
+                                    >
+                                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>send</span>
+                                    </button>
+                                </div>
+                                <div className="flex justify-between items-center mt-sm px-xs select-none">
+                                    <p className="text-[9px] text-on-surface-variant/70 uppercase tracking-widest font-bold">Facts-only engine | ICICI Prudential Verified Dataset</p>
+                                    <div className="flex items-center gap-xs">
+                                        <span className="material-symbols-outlined text-[12px] text-on-surface-variant">lock</span>
+                                        <span className="text-[9px] text-on-surface-variant uppercase tracking-wider font-bold">SECURE RAG PIPELINE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

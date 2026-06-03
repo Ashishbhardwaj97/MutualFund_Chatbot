@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GrowwFAQ | Mutual Fund Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#c8d4ec",
+                        "on-primary": "#003828",
+                        "outline": "#85948c",
+                        "secondary-fixed": "#dfe2f1",
+                        "primary-fixed": "#59fdc5",
+                        "primary-fixed-dim": "#2fe0aa",
+                        "surface-container-low": "#0d1c2d",
+                        "inverse-on-surface": "#233143",
+                        "outline-variant": "#3c4a43",
+                        "on-primary-fixed": "#002116",
+                        "tertiary-fixed": "#d8e3fb",
+                        "tertiary-container": "#adb8cf",
+                        "surface-container-lowest": "#010f1f",
+                        "on-secondary-container": "#b5b8c6",
+                        "secondary-fixed-dim": "#c3c6d4",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#273647",
+                        "surface-variant": "#273647",
+                        "tertiary-fixed-dim": "#bcc7de",
+                        "on-secondary-fixed": "#171b26",
+                        "on-error": "#690005",
+                        "surface-tint": "#2fe0aa",
+                        "surface-dim": "#051424",
+                        "surface": "#051424",
+                        "surface-container-high": "#1c2b3c",
+                        "surface-bright": "#2c3a4c",
+                        "primary-container": "#00d09c",
+                        "error": "#ffb4ab",
+                        "primary": "#44edb7",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "background": "#051424",
+                        "surface-container": "#122131",
+                        "on-tertiary-container": "#3e495c",
+                        "on-surface": "#d4e4fa",
+                        "secondary-container": "#454955",
+                        "on-primary-container": "#00533c",
+                        "on-primary-fixed-variant": "#00513b",
+                        "on-secondary": "#2c303b",
+                        "on-surface-variant": "#bacac1",
+                        "inverse-surface": "#d4e4fa",
+                        "on-background": "#d4e4fa",
+                        "on-tertiary": "#263143",
+                        "on-tertiary-fixed": "#111c2d",
+                        "on-secondary-fixed-variant": "#434652",
+                        "inverse-primary": "#006c4f",
+                        "secondary": "#c3c6d4",
+                        "error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "40px",
+                        "xl": "64px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "md": "24px",
+                        "base": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "headline-lg": ["Outfit"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Outfit"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .pulse-container {
+            position: relative;
+        }
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #00d09c;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="dark selection:bg-primary-container selection:text-on-primary-container">
+<aside class="h-screen w-80 fixed left-0 top-0 bg-surface-container border-r border-outline-variant shadow-sm flex flex-col py-md px-sm overflow-hidden z-50">
+<!-- Brand Header -->
+<div class="flex items-center gap-sm mb-lg px-xs">
+<img alt="GrowwFAQ Logo" class="w-10 h-10" src="data:image/png;base64,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"/>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">GrowwFAQ</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Facts-Only Assistant</p>
+</div>
+</div>
+<!-- Compliance Card -->
+<div class="mb-md p-md bg-warning-container/10 border border-yellow-500/20 rounded-xl bg-[#2a2412] relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-xs">
+<span class="material-symbols-outlined text-yellow-500 text-[18px]">verified_user</span>
+</div>
+<p class="font-label-md text-yellow-500 mb-xs flex items-center gap-xs">
+                Compliance Health
+                <span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+</span>
+</p>
+<p class="font-label-sm text-yellow-500/80 leading-relaxed uppercase tracking-widest text-[10px] font-bold">Facts-Only Active</p>
+</div>
+<!-- Scheme List -->
+<div class="flex-1 overflow-y-auto custom-scrollbar px-xs space-y-base">
+<h3 class="font-label-sm text-on-surface-variant uppercase tracking-tighter mb-sm px-sm">ICICI Prudential Schemes</h3>
+<!-- Navigation Items (Derived from JSON) -->
+<button class="w-full flex items-center gap-sm bg-secondary-container text-primary rounded-lg px-md py-sm transition-transform duration-200 active:scale-95 text-left">
+<span class="material-symbols-outlined" data-icon="show_chart">show_chart</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Bluechip</span>
+<span class="text-[10px] text-on-surface-variant opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Multi-Asset</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Liquid</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Midcap</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Prudential ELSS</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Balanced</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="savings">savings</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Value</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Gilt</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="factory">factory</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Infrastructure</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-sm text-on-surface-variant px-md py-sm hover:bg-surface-variant transition-colors rounded-lg text-left">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<div class="flex flex-col">
+<span class="font-label-md">ICICI Pru Commodities</span>
+<span class="text-[10px] opacity-60">Synced: 1 day ago</span>
+</div>
+</button>
+</div>
+<!-- Health Widget Footer -->
+<div class="mt-auto pt-md border-t border-outline-variant/30">
+<div class="p-sm rounded-xl bg-surface-container-high flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-primary flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+                        Indexing Chunks
+                    </span>
+<span class="font-label-md text-on-surface">1,240</span>
+</div>
+<div class="w-full h-1 bg-outline-variant rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-primary-container animate-pulse"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant text-center">Factual integrity verified</p>
+</div>
+</div>
+</aside>
+<main class="ml-80 min-h-screen flex flex-col bg-background relative overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -z-10 translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] -z-10 -translate-x-1/4 translate-y-1/4"></div>
+<!-- Top Navigation Bar -->
+<header class="flex justify-between items-center w-full px-margin-desktop h-16 bg-surface/70 backdrop-blur-xl border-b border-white/10 sticky top-0 z-40">
+<div class="flex items-center gap-md">
+<h2 class="font-headline-md text-headline-md font-bold text-primary">ICICI Prudential FAQ Desk</h2>
+<div class="flex items-center gap-sm px-sm py-1 bg-surface-container-highest rounded-full border border-outline-variant">
+<div class="relative flex h-2 w-2">
+<div class="pulse-ring"></div>
+<div class="relative rounded-full h-2 w-2 bg-primary"></div>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">RAG Pipeline: Online</span>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">info</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+</div>
+</div>
+</header>
+<!-- Chat Content Canvas -->
+<div class="flex-1 px-margin-desktop py-lg overflow-y-auto custom-scrollbar flex flex-col items-center gap-lg max-w-5xl mx-auto w-full pb-48">
+<!-- Welcome Card -->
+<div class="w-full text-center py-xl">
+<h2 class="font-display-lg text-display-lg mb-md text-on-surface">How can I help you find <span class="text-primary">factual info</span> on ICICI Prudential Schemes today?</h2>
+<div class="flex flex-wrap justify-center gap-sm mt-lg">
+<button class="px-md py-sm rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-label-md">
+                        Exit load of Liquid Fund
+                    </button>
+<button class="px-md py-sm rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-label-md">
+                        Fund managers for Value Discovery
+                    </button>
+<button class="px-md py-sm rounded-full glass-card border border-white/10 hover:border-primary/40 hover:text-primary transition-all text-label-md">
+                        Flexicap SIP amount
+                    </button>
+</div>
+</div>
+</div>
+<!-- Floating Search Bar -->
+<div class="fixed bottom-0 left-80 right-0 p-lg z-50 flex justify-center pointer-events-none">
+<div class="w-full max-w-3xl glass-card rounded-2xl p-sm border border-white/10 shadow-2xl pointer-events-auto">
+<div class="flex items-center gap-sm">
+<div class="flex-1 flex items-center gap-sm px-md py-sm bg-surface-container-lowest rounded-xl border border-outline-variant focus-within:border-primary focus-within:ring-1 focus-within:ring-primary/30 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/50 w-full font-body-md" placeholder="Ask about expense ratios, fund managers, or withdrawal rules..." type="text"/>
+</div>
+<button class="bg-primary-container text-on-primary-container p-sm rounded-xl hover:scale-105 transition-transform active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-sm px-xs">
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Facts-only engine | ICICI Prudential Verified Dataset</p>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[12px] text-on-surface-variant">lock</span>
+<span class="text-[10px] text-on-surface-variant">SECURE RAG PIPELINE</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Micro-interaction for scheme list buttons
+        document.querySelectorAll('aside button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active styles
+                document.querySelectorAll('aside button').forEach(b => {
+                    b.classList.remove('bg-secondary-container', 'text-primary');
+                    b.classList.add('text-on-surface-variant');
+                });
+                // Add active styles to clicked
+                button.classList.add('bg-secondary-container', 'text-primary');
+                button.classList.remove('text-on-surface-variant');
+            });
+        });
+
+        // Simple floating background movement
+        document.addEventListener('mousemove', (e) => {
+            const blobs = document.querySelectorAll('.blur-[120px], .blur-[100px]');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            blobs.forEach((blob, index) => {
+                const speed = (index + 1) * 20;
+                blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body></html>
