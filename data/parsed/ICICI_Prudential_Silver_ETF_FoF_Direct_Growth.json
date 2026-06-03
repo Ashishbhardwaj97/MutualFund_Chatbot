@@ -1,9 +1,9 @@
 {
     "fund_name": "ICICI Prudential Silver ETF FoF Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-silver-etf-fof-direct-growth",
-    "nav": 39.9439,
+    "nav": 40.3012,
     "fund_size": 6276.93165308,
-    "expense_ratio": 0.22,
+    "expense_ratio": 0.21,
     "exit_load": "Exit load of 1% If redeemed within 15 days.",
     "min_sip": 100.0,
     "lock_in": "No Lock-in",
@@ -32,5 +32,5 @@
         }
     ],
     "objective": "The scheme seeks a fund of fund scheme with the primary objective to generate returns by investing in units of ICICI Prudential Silver ETF.",
-    "last_scraped_date": "2026-06-01"
+    "last_scraped_date": "2026-06-03"
 }
