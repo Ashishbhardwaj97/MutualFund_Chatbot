@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Multicap Fund Direct Plan Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-multicap-fund-direct-growth",
-    "nav": 953.58,
+    "nav": 954.14,
     "fund_size": 17675.79809457,
     "expense_ratio": 1.07,
     "exit_load": "Exit load of 1%, if redeemed within 1 month.",
@@ -52,5 +52,5 @@
         }
     ],
     "objective": "The scheme seeks to generate capital appreciation through investments in equity & equity related instrument across large cap, mid cap and small cap stocks of various industries.",
-    "last_scraped_date": "2026-06-16"
+    "last_scraped_date": "2026-06-17"
 }
