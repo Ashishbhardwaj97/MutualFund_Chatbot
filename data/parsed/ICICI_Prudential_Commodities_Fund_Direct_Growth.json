@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Commodities Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-commodities-fund-direct-growth",
-    "nav": 50.87,
+    "nav": 50.25,
     "fund_size": 3998.52361482,
     "expense_ratio": 1.04,
     "exit_load": "Exit load of 1% if redeemed within 3 months.",
@@ -27,5 +27,5 @@
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation by creating a portfolio that is invested predominantly in Equity and Equity related securities of companies engaged in commodity and commodity related sectors.",
-    "last_scraped_date": "2026-06-25"
+    "last_scraped_date": "2026-06-26"
 }
