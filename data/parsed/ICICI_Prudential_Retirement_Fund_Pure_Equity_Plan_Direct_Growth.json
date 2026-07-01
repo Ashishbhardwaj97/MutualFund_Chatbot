@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth",
-    "nav": 38.65,
+    "nav": 38.64,
     "fund_size": 1923.76344737,
     "expense_ratio": 0.88,
     "exit_load": "Nil",
@@ -51,21 +51,6 @@
             "tenure": "Not Specified"
         },
         {
-            "name": "Anand Radhakrishnan",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
-            "name": "R Janakiraman",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
-            "name": "Srikesh Nair",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
             "name": "Raunak Onkar",
             "experience": "Not Specified",
             "tenure": "Not Specified"
@@ -79,8 +64,23 @@
             "name": "Raj Mehta",
             "experience": "Not Specified",
             "tenure": "Not Specified"
+        },
+        {
+            "name": "Anand Radhakrishnan",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "R Janakiraman",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
+            "name": "Srikesh Nair",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation and income generation to investors from a portfolio that is predominantly invested in equity and equity related securities.",
-    "last_scraped_date": "2026-06-30"
+    "last_scraped_date": "2026-07-01"
 }
