@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Equity & Debt Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-balanced-direct-growth",
-    "nav": 450.32,
+    "nav": 452.2,
     "fund_size": 50032.71389479,
     "expense_ratio": 1.06,
     "exit_load": "Exit load for units in excess of 30% of the investment,1% will be charged for redemption within 365 days",
@@ -56,6 +56,11 @@
             "tenure": "Not Specified"
         },
         {
+            "name": "Sanjay Kumar Chhabaria",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
             "name": "Gautam Kaul",
             "experience": "Not Specified",
             "tenure": "Not Specified"
@@ -84,23 +89,8 @@
             "name": "Sanjay Parekh",
             "experience": "Not Specified",
             "tenure": "Not Specified"
-        },
-        {
-            "name": "Sachin Padwal-Desai",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
-            "name": "Umesh Sharma",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
-            "name": "Lakshmikanth Reddy",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation and current income by investing in a portfolio that is investing in equities and related securities as well as fixed income and money market securities. The approximate allocation to equity would be in the range of 60-80 per cent with a minimum of 51 per cent, and the approximate debt allocation is 40-49 per cent, with a minimum of 20 per cent.",
-    "last_scraped_date": "2026-07-01"
+    "last_scraped_date": "2026-07-02"
 }
