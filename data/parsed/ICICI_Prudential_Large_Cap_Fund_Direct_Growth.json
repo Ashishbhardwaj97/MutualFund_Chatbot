@@ -1,8 +1,8 @@
 {
     "fund_name": "ICICI Prudential Large Cap Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-large-cap-fund-direct-growth",
-    "nav": 121.83,
-    "fund_size": 79420.73776911,
+    "nav": 122.07,
+    "fund_size": 80960.34229763,
     "expense_ratio": 1.0,
     "exit_load": "Exit load of 1%, if redeemed within 1 month.",
     "min_sip": 100.0,
@@ -72,5 +72,5 @@
         }
     ],
     "objective": "The scheme seeks to generate long term capital appreciation and income distribution to investors from a portfolio that is predominantly invested in equity and equity related securities of large cap companies.",
-    "last_scraped_date": "2026-08-10"
+    "last_scraped_date": "2026-08-11"
 }
