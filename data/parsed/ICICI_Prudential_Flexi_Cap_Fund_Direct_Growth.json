@@ -1,39 +1,24 @@
 {
-    "fund_name": "ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth",
-    "source_url": "https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth",
-    "nav": 40.16,
-    "fund_size": 2095.77828756,
-    "expense_ratio": 0.87,
-    "exit_load": "Nil",
+    "fund_name": "ICICI Prudential Flexi Cap Fund Direct Growth",
+    "source_url": "https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth",
+    "nav": 22.4,
+    "fund_size": 24099.78384557,
+    "expense_ratio": 0.88,
+    "exit_load": "Exit load of 1%, if redeemed within 1 month.",
     "min_sip": 100.0,
-    "lock_in": "5 Year(s)",
-    "riskometer": "Moderately High",
-    "benchmark": "NIFTY 500 Total Return Index",
+    "lock_in": "No Lock-in",
+    "riskometer": "Very High",
+    "benchmark": "BSE 500 Total Return Index",
     "managers": [
         {
-            "name": "Rohit Lakhotia",
-            "experience": "Prior to joining ICICI Prudential Mutual Fund, he has worked with Yes Bank and Samsung Electronics",
-            "tenure": "Since January 2024"
-        },
-        {
-            "name": "Sanket Gaidhani",
-            "experience": "He joined ICICI Prudential AMC, he has been part of the Research Team, Relationship Manager of the AMC",
-            "tenure": "Since August 2025"
+            "name": "Rajat Chandak",
+            "experience": "He has been associated with ICICI Prudential AMC since 2008.",
+            "tenure": "Since June 2021"
         },
         {
             "name": "Sharmila D'Silva",
             "experience": "She joined ICICI Prudential AMC Limited in September 2016.",
             "tenure": "Since June 2022"
-        },
-        {
-            "name": "Darshil Dedhia",
-            "experience": "He has been working with ICICI Prudential Mutual Fund since 2013.",
-            "tenure": "Since January 2024"
-        },
-        {
-            "name": "Mrinal Singh",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
         },
         {
             "name": "Alok Singh",
@@ -81,6 +66,6 @@
             "tenure": "Not Specified"
         }
     ],
-    "objective": "The scheme seeks to generate long-term capital appreciation and income generation to investors from a portfolio that is predominantly invested in equity and equity related securities.",
+    "objective": "The scheme seeks to generate long-term capital appreciation by investing predominately in equity & equity related instruments across market capitalization.",
     "last_scraped_date": "2026-08-26"
 }
