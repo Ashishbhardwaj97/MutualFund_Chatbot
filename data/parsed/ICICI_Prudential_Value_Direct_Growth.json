@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Value Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-value-direct-growth",
-    "nav": 509.21,
+    "nav": 510.56,
     "fund_size": 61102.29013511,
     "expense_ratio": 1.07,
     "exit_load": "Exit load of 1% if redeemed within 12 months",
@@ -37,5 +37,5 @@
         }
     ],
     "objective": "The scheme seeks to generate returns through a combination of dividend income and capital appreciation by investing primarily in a well-diversified portfolio of value stocks.",
-    "last_scraped_date": "2026-08-27"
+    "last_scraped_date": "2026-08-28"
 }
