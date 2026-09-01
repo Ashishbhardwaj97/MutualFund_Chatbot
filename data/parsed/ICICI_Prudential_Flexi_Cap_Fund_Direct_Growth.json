@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Flexi Cap Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-flexicap-fund-direct-growth",
-    "nav": 22.28,
+    "nav": 22.42,
     "fund_size": 24099.78384557,
     "expense_ratio": 0.87,
     "exit_load": "Exit load of 1%, if redeemed within 1 month.",
@@ -67,5 +67,5 @@
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation by investing predominately in equity & equity related instruments across market capitalization.",
-    "last_scraped_date": "2026-08-31"
+    "last_scraped_date": "2026-09-01"
 }
