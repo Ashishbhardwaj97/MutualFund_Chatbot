@@ -1,9 +1,9 @@
 {
     "fund_name": "ICICI Prudential Small Cap Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-indo-asia-equity-fund-direct-growth",
-    "nav": 104.21,
+    "nav": 103.37,
     "fund_size": 9533.38346987,
-    "expense_ratio": 1.17,
+    "expense_ratio": 1.18,
     "exit_load": "Exit load of 1% if redeemed upto 1 year",
     "min_sip": 100.0,
     "lock_in": "No Lock-in",
@@ -77,5 +77,5 @@
         }
     ],
     "objective": "The scheme seeks to generate capital appreciation by predominantly investing in equity and equity related securities of small cap stocks.",
-    "last_scraped_date": "2026-09-02"
+    "last_scraped_date": "2026-09-03"
 }
