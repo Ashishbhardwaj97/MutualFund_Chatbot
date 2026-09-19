@@ -1,9 +1,9 @@
 {
     "fund_name": "ICICI Prudential Small Cap Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-indo-asia-equity-fund-direct-growth",
-    "nav": 102.69,
+    "nav": 103.45,
     "fund_size": 9820.60947952,
-    "expense_ratio": 1.19,
+    "expense_ratio": 1.18,
     "exit_load": "Exit load of 1% if redeemed upto 1 year",
     "min_sip": 100.0,
     "lock_in": "No Lock-in",
@@ -46,12 +46,12 @@
             "tenure": "Not Specified"
         },
         {
-            "name": "Anoop Bhaskar",
+            "name": "Pradeep Gokhale",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
         {
-            "name": "Pradeep Gokhale",
+            "name": "Anoop Bhaskar",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
@@ -77,5 +77,5 @@
         }
     ],
     "objective": "The scheme seeks to generate capital appreciation by predominantly investing in equity and equity related securities of small cap stocks.",
-    "last_scraped_date": "2026-09-18"
+    "last_scraped_date": "2026-09-19"
 }
