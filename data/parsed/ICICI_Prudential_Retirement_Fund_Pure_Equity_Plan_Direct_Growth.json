@@ -1,9 +1,9 @@
 {
     "fund_name": "ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth",
-    "nav": 36.9,
-    "fund_size": 2157.93612666,
-    "expense_ratio": 0.88,
+    "nav": 37.23,
+    "fund_size": 2105.95046246,
+    "expense_ratio": 0.92,
     "exit_load": "Nil",
     "min_sip": 100.0,
     "lock_in": "5 Year(s)",
@@ -72,5 +72,5 @@
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation and income generation to investors from a portfolio that is predominantly invested in equity and equity related securities.",
-    "last_scraped_date": "2026-10-09"
+    "last_scraped_date": "2026-10-10"
 }
