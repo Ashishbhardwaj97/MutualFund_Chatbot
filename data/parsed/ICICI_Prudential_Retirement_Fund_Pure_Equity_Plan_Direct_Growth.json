@@ -1,7 +1,7 @@
 {
     "fund_name": "ICICI Prudential Retirement Fund Pure Equity Plan Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-retirement-fund-pure-equity-plan-direct-growth",
-    "nav": 37.33,
+    "nav": 36.87,
     "fund_size": 2105.95,
     "expense_ratio": 0.93,
     "exit_load": "Nil",
@@ -46,12 +46,12 @@
             "tenure": "Not Specified"
         },
         {
-            "name": "Neelotpal Sahai",
+            "name": "Prashant Jain",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
         {
-            "name": "Prashant Jain",
+            "name": "Neelotpal Sahai",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
@@ -72,5 +72,5 @@
         }
     ],
     "objective": "The scheme seeks to generate long-term capital appreciation and income generation to investors from a portfolio that is predominantly invested in equity and equity related securities.",
-    "last_scraped_date": "2026-10-21"
+    "last_scraped_date": "2026-10-22"
 }
