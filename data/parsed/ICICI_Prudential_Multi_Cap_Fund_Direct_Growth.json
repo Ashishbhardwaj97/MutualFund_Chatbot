@@ -1,8 +1,8 @@
 {
     "fund_name": "ICICI Prudential Multi Cap Fund Direct Growth",
     "source_url": "https://groww.in/mutual-funds/icici-prudential-multicap-fund-direct-growth",
-    "nav": 930.59,
-    "fund_size": 18717.26,
+    "nav": 946.38,
+    "fund_size": 17967.42,
     "expense_ratio": 1.0,
     "exit_load": "Exit load of 1%, if redeemed within 1 month.",
     "min_sip": 100.0,
@@ -41,12 +41,12 @@
             "tenure": "Not Specified"
         },
         {
-            "name": "Neelotpal Sahai",
+            "name": "Abhishek Bisen",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
         {
-            "name": "Abhishek Bisen",
+            "name": "Neelotpal Sahai",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         },
@@ -57,5 +57,5 @@
         }
     ],
     "objective": "The scheme seeks to generate capital appreciation through investments in equity & equity related instrument across large cap, mid cap and small cap stocks of various industries.",
-    "last_scraped_date": "2026-11-10"
+    "last_scraped_date": "2026-11-12"
 }
