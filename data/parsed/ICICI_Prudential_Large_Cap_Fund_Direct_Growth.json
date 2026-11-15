@@ -56,11 +56,6 @@
             "tenure": "Not Specified"
         },
         {
-            "name": "Harish Zaveri",
-            "experience": "Not Specified",
-            "tenure": "Not Specified"
-        },
-        {
             "name": "Ashwani Kumar",
             "experience": "Not Specified",
             "tenure": "Not Specified"
@@ -71,11 +66,16 @@
             "tenure": "Not Specified"
         },
         {
+            "name": "Harish Zaveri",
+            "experience": "Not Specified",
+            "tenure": "Not Specified"
+        },
+        {
             "name": "Prashant Jain",
             "experience": "Not Specified",
             "tenure": "Not Specified"
         }
     ],
     "objective": "The scheme seeks to generate long term capital appreciation and income distribution to investors from a portfolio that is predominantly invested in equity and equity related securities of large cap companies.",
-    "last_scraped_date": "2026-11-14"
+    "last_scraped_date": "2026-11-15"
 }
